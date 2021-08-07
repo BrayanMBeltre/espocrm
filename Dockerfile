@@ -78,7 +78,7 @@ RUN { \
 	echo 'upload_max_filesize=30M'; \
 	echo 'date.timezone=UTC'; \
 } > ${PHP_INI_DIR}/conf.d/espocrm.ini
-%%ADDITIONS%%
+
 ENV ESPOCRM_VERSION %%ESPOCRM_VERSION%%
 ENV ESPOCRM_SHA256 %%ESPOCRM_SHA256%%
 
